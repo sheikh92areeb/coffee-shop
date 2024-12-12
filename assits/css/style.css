@@ -62,6 +62,13 @@ section {
 .btn:hover {
     letter-spacing: .2rem;
 }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
 .header {
     background: var(--bg);
     display: flex;
@@ -83,7 +90,8 @@ section {
     font-size: 1.6rem;
     color: #fff;    
 }
-.header .navbar a:hover {
+.header .navbar a:hover,
+.header .navbar a.active{
     color: var(--main-color);
     border-bottom: .1rem solid var(--main-color);
     padding-bottom: .5rem;
@@ -111,8 +119,10 @@ section {
     align-items: center;
     transform: scaleY(0);
     transform-origin: top;
+    transition: all 0.5s ease;
 }
 .header .search-form.active {
+    transition: all 0.5s ease;
     transform: scaleY(1);
 }
 .header .search-form input {
@@ -140,8 +150,10 @@ section {
     width: 35rem;
     background: #fff;
     padding: 0 1.5rem;
+    transition: all 1s ease;
 }
 .header .cart-items-container.active {
+    transition: all 1s ease;
     right: 0;
 }
 .header .cart-items-container .cart-item {
@@ -185,6 +197,7 @@ section {
     background: url(../../img/home-img-2.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 .home .content {
     max-width: 60rem;
@@ -355,12 +368,12 @@ section {
 .contact .row form {
     flex: 1 1 45rem;
     padding: 5rem 2rem;
-    text-align: center;
 }
 .contact .row form h3 {
     text-transform: uppercase;
     font-size: 3.5rem;
     color: #fff;
+    text-align: center;
 }
 .contact .row form .input-box {
     display: flex;
