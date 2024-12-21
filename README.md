@@ -4,6 +4,12 @@ Welcome to the **Coffee Shop Website** repository! This project features a fully
 
 ---
 
+## 🖼️ Screenshots
+
+![Home Page](home-page.png)
+
+---
+
 ## 🌟 Live Demo
 [Check out the live demo here](https://sheikh92areeb.github.io/coffee-shop/)
 
@@ -32,12 +38,6 @@ Welcome to the **Coffee Shop Website** repository! This project features a fully
 - **HTML**: Structure of the website.
 - **CSS**: Styling and animations, including advanced hover effects.
 - **JavaScript**: Added interactivity.
-
----
-
-## 🖼️ Screenshots
-
-*(Add screenshots of your website here to give viewers a visual preview)*
 
 ---
 
